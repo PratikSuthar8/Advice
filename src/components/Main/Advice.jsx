@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Advice.css";
 const Advice = () => {
 	const [advice, setAdvice] = useState("");
@@ -7,7 +7,9 @@ const Advice = () => {
 		const data = await res.json();
 		setAdvice(data.slip.advice);
 	}
-
+	useEffect(() => {
+		getAdvice();
+	}, []);
 	return (
 		<div className="container">
 			<div className="inner-container">
