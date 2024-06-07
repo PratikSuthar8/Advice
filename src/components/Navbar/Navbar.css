@@ -1,11 +1,15 @@
-nav .brand {
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-nav .brand span {
-    color: crimson;
+nav {
+	.brand {
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		&:hover {
+			cursor: pointer;
+		}
+		span {
+			color: crimson;
+		}
+	}
 }

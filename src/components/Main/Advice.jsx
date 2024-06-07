@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable react/no-unescaped-entities */
+import { useEffect, useState } from "react";
 import "./Advice.css";
 const Advice = () => {
 	const [advice, setAdvice] = useState("");
@@ -14,7 +15,7 @@ const Advice = () => {
 		<div className="container">
 			<div className="inner-container">
 				<div className="advice-generator">
-					<h1>Today'sAdvice</h1>
+					<h1>Today's Advice</h1>
 					<button onClick={getAdvice}>Get Advice</button>
 				</div>
 				<div className="advice">
